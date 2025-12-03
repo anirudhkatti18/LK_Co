@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Values | Laxman Kamath & Co | Infrastructure & Construction</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Manrope', 'sans-serif'],
+                    },
+                    colors: {
+                        'c-dark': '#111111',
+                        'c-gray': '#F4F4F4',
+                        'c-accent': '#0033FF',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .nav-scrolled {
+            background-color: rgba(17, 17, 17, 0.95);
+            backdrop-filter: blur(10px);
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 antialiased bg-white">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 text-white border-b border-white/10 bg-c-dark">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <!-- Left: Logo -->
+            <div class="flex items-center space-x-2 shrink-0">
+                <img src="Images/white logo.jpg" alt="Laxman Kamath & Co Logo" class="h-12">
+                <a href="index.html" class="hidden lg:block text-xl font-bold tracking-tight leading-tight">Laxman Kamath<br>& Co</a>
+                <a href="index.html" class="lg:hidden text-xl font-bold tracking-tight">LK & Co</a>
+            </div>
+            
+            <!-- Center: Main Links (Hidden on Mobile) -->
+            <div class="hidden xl:flex absolute left-1/2 transform -translate-x-1/2 space-x-3 text-xs font-bold tracking-wide uppercase">
+                <a href="index.html" class="hover:text-c-accent transition-colors">Home</a>
+                <a href="about.html" class="hover:text-c-accent transition-colors">About</a>
+                <a href="values.html" class="text-c-accent transition-colors">Values</a>
+                <a href="services.html" class="hover:text-c-accent transition-colors">Services</a>
+                <a href="quality.html" class="hover:text-c-accent transition-colors">Quality</a>
+                <a href="team.html" class="hover:text-c-accent transition-colors">Team</a>
+                <a href="innovation.html" class="hover:text-c-accent transition-colors">Innovation</a>
+                <a href="events.html" class="hover:text-c-accent transition-colors">Events</a>
+                <a href="careers.html" class="hover:text-c-accent transition-colors">Careers</a>
+                <a href="contact.html" class="hover:text-c-accent transition-colors">Contact</a>
+            </div>
+
+            <!-- Right: Lkrete Link & Mobile Menu Toggle -->
+            <div class="flex items-center space-x-4 shrink-0">
+                <a href="lkrete.html" class="bg-c-accent hover:bg-blue-700 text-white px-4 py-2 font-bold uppercase text-xs tracking-wider transition-colors rounded-sm">
+                    Lkrete
+                </a>
+                <button class="xl:hidden text-white" onclick="toggleMobileMenu()">
+                    <i data-lucide="menu" class="w-8 h-8"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-c-dark p-6 flex-col space-y-4 border-t border-gray-800 xl:hidden max-h-[80vh] overflow-y-auto">
+            <a href="index.html" class="block hover:text-c-accent font-bold">Home</a>
+            <a href="about.html" class="block hover:text-c-accent font-bold">About Us</a>
+            <a href="values.html" class="block text-c-accent font-bold">Values</a>
+            <a href="services.html" class="block hover:text-c-accent font-bold">Services</a>
+            <a href="quality.html" class="block hover:text-c-accent font-bold">Quality</a>
+            <a href="team.html" class="block hover:text-c-accent font-bold">Team & Safety</a>
+            <a href="innovation.html" class="block hover:text-c-accent font-bold">Academia & Innovation</a>
+            <a href="events.html" class="block hover:text-c-accent font-bold">Events</a>
+            <a href="careers.html" class="block hover:text-c-accent font-bold">Careers</a>
+            <a href="lkrete.html" class="block text-c-accent font-bold">Lkrete (Specialized)</a>
+            <a href="contact.html" class="block hover:text-c-accent font-bold">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 bg-c-dark text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h4 class="text-c-accent font-bold uppercase tracking-widest mb-4 text-sm">What we live by</h4>
+            <h1 class="text-5xl font-extrabold mb-6">Our Core Values</h1>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">The fundamental principles that guide every decision we make and every project we undertake.</p>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Excellence -->
+                <div class="text-center group">
+                    <div class="w-20 h-20 bg-c-accent rounded-full flex items-center justify-center mb-8 mx-auto group-hover:bg-c-dark transition-colors">
+                        <i data-lucide="award" class="w-10 h-10 text-white"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-c-dark mb-4">Excellence</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">Delivering superior quality in every project we undertake. We set the highest standards and consistently exceed expectations.</p>
+                    <ul class="text-left text-gray-600 space-y-2">
+                        <li>• Uncompromising quality control</li>
+                        <li>• Continuous improvement</li>
+                        <li>• Attention to detail</li>
+                        <li>• Professional excellence</li>
+                    </ul>
+                </div>
+
+                <!-- Integrity -->
+                <div class="text-center group">
+                    <div class="w-20 h-20 bg-c-accent rounded-full flex items-center justify-center mb-8 mx-auto group-hover:bg-c-dark transition-colors">
+                        <i data-lucide="shield-check" class="w-10 h-10 text-white"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-c-dark mb-4">Integrity</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">Building trust through transparent and ethical practices. We believe in honest communication and responsible business conduct.</p>
+                    <ul class="text-left text-gray-600 space-y-2">
+                        <li>• Transparent communication</li>
+                        <li>• Ethical business practices</li>
+                        <li>• Trust and reliability</li>
+                        <li>• Accountability</li>
+                    </ul>
+                </div>
+
+                <!-- Innovation -->
+                <div class="text-center group">
+                    <div class="w-20 h-20 bg-c-accent rounded-full flex items-center justify-center mb-8 mx-auto group-hover:bg-c-dark transition-colors">
+                        <i data-lucide="lightbulb" class="w-10 h-10 text-white"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-c-dark mb-4">Innovation</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">Pioneering new methods for sustainable construction. We embrace technology and creative solutions to solve complex challenges.</p>
+                    <ul class="text-left text-gray-600 space-y-2">
+                        <li>• Advanced technology adoption</li>
+                        <li>• Creative problem solving</li>
+                        <li>• Sustainable practices</li>
+                        <li>• Industry leadership</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-24 bg-c-gray">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h4 class="text-c-accent font-bold uppercase tracking-widest mb-4 text-sm">Our Approach</h4>
+                <h2 class="text-4xl font-bold text-c-dark">How We Work</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-c-accent rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <span class="text-white font-bold text-xl">1</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-c-dark mb-2">Planning</h3>
+                    <p class="text-gray-600 text-sm">Comprehensive project analysis and strategic planning.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-c-accent rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <span class="text-white font-bold text-xl">2</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-c-dark mb-2">Design</h3>
+                    <p class="text-gray-600 text-sm">Innovative design solutions tailored to your needs.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-c-accent rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <span class="text-white font-bold text-xl">3</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-c-dark mb-2">Execution</h3>
+                    <p class="text-gray-600 text-sm">Skilled execution with quality control at every step.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-c-accent rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <span class="text-white font-bold text-xl">4</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-c-dark mb-2">Delivery</h3>
+                    <p class="text-gray-600 text-sm">Timely delivery with ongoing support and maintenance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability Section -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2">
+                    <h4 class="text-c-accent font-bold uppercase tracking-widest mb-4 text-sm">Sustainability</h4>
+                    <h2 class="text-4xl font-bold text-c-dark mb-6">Building for Tomorrow</h2>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Our commitment to sustainability drives us to adopt eco-friendly practices, use sustainable materials, and implement innovative construction methods that minimize environmental impact.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i data-lucide="leaf" class="w-5 h-5 text-c-accent mr-3"></i>
+                            <span class="text-gray-600">Eco-friendly construction materials</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-lucide="recycle" class="w-5 h-5 text-c-accent mr-3"></i>
+                            <span class="text-gray-600">Waste reduction and recycling</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-lucide="zap" class="w-5 h-5 text-c-accent mr-3"></i>
+                            <span class="text-gray-600">Energy-efficient solutions</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-lucide="tree-pine" class="w-5 h-5 text-c-accent mr-3"></i>
+                            <span class="text-gray-600">Carbon footprint reduction</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Sustainable Construction" class="w-full h-auto shadow-2xl rounded-sm">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12 border-t border-white/10">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                <img src="Images/white logo.jpg" alt="Company Logo" class="h-10">
+                <div class="flex flex-col">
+                     <span class="text-lg font-bold tracking-tight leading-none">Laxman Kamath</span>
+                     <span class="text-sm font-bold tracking-tight text-gray-400">& Co.</span>
+                </div>
+            </div>
+            <div class="text-gray-500 text-sm text-center md:text-right">
+                &copy; 2023 Laxman Kamath & Co. All rights reserved.<br>
+                <a href="#" class="hover:text-white">Privacy Policy</a> | <a href="#" class="hover:text-white">Terms of Service</a>
+            </div>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" class="text-gray-500 hover:text-c-accent transition-colors"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                <a href="#" class="text-gray-500 hover:text-c-accent transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                <a href="#" class="text-gray-500 hover:text-c-accent transition-colors"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Navbar Scroll Effect
+        const nav = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('nav-scrolled');
+                nav.classList.remove('py-4');
+            } else {
+                nav.classList.remove('nav-scrolled');
+                nav.classList.add('py-4');
+            }
+        });
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia & Innovation | Laxman Kamath & Co | Infrastructure & Construction</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Manrope', 'sans-serif'],
+                    },
+                    colors: {
+                        'c-dark': '#111111',
+                        'c-gray': '#F4F4F4',
+                        'c-accent': '#0033FF',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .nav-scrolled {
+            background-color: rgba(17, 17, 17, 0.95);
+            backdrop-filter: blur(10px);
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 antialiased bg-white">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 text-white border-b border-white/10 bg-c-dark">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <!-- Left: Logo -->
+            <div class="flex items-center space-x-2 shrink-0">
+                <img src="Images/white logo.jpg" alt="Laxman Kamath & Co Logo" class="h-12">
+                <a href="index.html" class="hidden lg:block text-xl font-bold tracking-tight leading-tight">Laxman Kamath<br>& Co</a>
+                <a href="index.html" class="lg:hidden text-xl font-bold tracking-tight">LK & Co</a>
+            </div>
+            
+            <!-- Center: Main Links (Hidden on Mobile) -->
+            <div class="hidden xl:flex absolute left-1/2 transform -translate-x-1/2 space-x-3 text-xs font-bold tracking-wide uppercase">
+                <a href="index.html" class="hover:text-c-accent transition-colors">Home</a>
+                <a href="about.html" class="hover:text-c-accent transition-colors">About</a>
+                <a href="values.html" class="hover:text-c-accent transition-colors">Values</a>
+                <a href="services.html" class="hover:text-c-accent transition-colors">Services</a>
+                <a href="quality.html" class="hover:text-c-accent transition-colors">Quality</a>
+                <a href="team.html" class="hover:text-c-accent transition-colors">Team</a>
+                <a href="innovation.html" class="text-c-accent transition-colors">Innovation</a>
+                <a href="events.html" class="hover:text-c-accent transition-colors">Events</a>
+                <a href="careers.html" class="hover:text-c-accent transition-colors">Careers</a>
+                <a href="contact.html" class="hover:text-c-accent transition-colors">Contact</a>
+            </div>
+
+            <!-- Right: Lkrete Link & Mobile Menu Toggle -->
+            <div class="flex items-center space-x-4 shrink-0">
+                <a href="lkrete.html" class="bg-c-accent hover:bg-blue-700 text-white px-4 py-2 font-bold uppercase text-xs tracking-wider transition-colors rounded-sm">
+                    Lkrete
+                </a>
+                <button class="xl:hidden text-white" onclick="toggleMobileMenu()">
+                    <i data-lucide="menu" class="w-8 h-8"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-c-dark p-6 flex-col space-y-4 border-t border-gray-800 xl:hidden max-h-[80vh] overflow-y-auto">
+            <a href="index.html" class="block hover:text-c-accent font-bold">Home</a>
+            <a href="about.html" class="block hover:text-c-accent font-bold">About Us</a>
+            <a href="values.html" class="block hover:text-c-accent font-bold">Values</a>
+            <a href="services.html" class="block hover:text-c-accent font-bold">Services</a>
+            <a href="quality.html" class="block hover:text-c-accent font-bold">Quality</a>
+            <a href="team.html" class="block hover:text-c-accent font-bold">Team & Safety</a>
+            <a href="innovation.html" class="block text-c-accent font-bold">Academia & Innovation</a>
+            <a href="events.html" class="block hover:text-c-accent font-bold">Events</a>
+            <a href="careers.html" class="block hover:text-c-accent font-bold">Careers</a>
+            <a href="lkrete.html" class="block text-c-accent font-bold">Lkrete (Specialized)</a>
+            <a href="contact.html" class="block hover:text-c-accent font-bold">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 bg-c-dark text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h4 class="text-c-accent font-bold uppercase tracking-widest mb-4 text-sm">Knowledge Hub</h4>
+            <h1 class="text-5xl font-extrabold mb-6">Academia & Innovation</h1>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">Fostering innovation through research, publications, training, and collaborative seminars with industry experts.</p>
+        </div>
+    </section>
+
+    <!-- Knowledge Hub -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h4 class="text-c-accent font-bold uppercase tracking-widest mb-4 text-sm">Our Resources</h4>
+                <h2 class="text-4xl font-bold text-c-dark">Knowledge & Innovation</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- White Papers -->
+                <div class="group cursor-pointer bg-c-gray p-8 hover:bg-c-accent hover:text-white transition-colors">
+                    <div class="w-16 h-16 bg-c-accent rounded-full flex items-center justify-center mb-6 mx-auto group-hover:bg-white transition-colors">
+                        <i data-lucide="file-text" class="w-8 h-8 text-white group-hover:text-c-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-c-dark group-hover:text-white mb-4">White Papers</h3>
+                    <p class="text-gray-600 group-hover:text-gray-100">In-depth technical analysis of modern infrastructure challenges and solutions.</p>
+                </div>
+
+                <!-- Blogs -->
+                <div class="group cursor-pointer bg-c-gray p-8 hover:bg-c-accent hover:text-white transition-colors">
+                    <div class="w-16 h-16 bg-c-accent rounded-full flex items-center justify-center mb-6 mx-auto group-hover:bg-white transition-colors">
+                        <i data-lucide="pen-tool" class="w-8 h-8 text-white group-hover:text-c-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-c-dark group-hover:text-white mb-4">Blogs</h3>
+                    <p class="text-gray-600 group-hover:text-gray-100">Updates on our latest projects, technological breakthroughs, and industry news.</p>
+                </div>
+
+                <!-- Training -->
+                <div class="group cursor-pointer bg-c-gray p-8 hover:bg-c-accent hover:text-white transition-colors">
+                    <div class="w-16 h-16 bg-c-accent rounded-full flex items-center justify-center mb-6 mx-auto group-hover:bg-white transition-colors">
+                        <i data-lucide="graduation-cap" class="w-8 h-8 text-white group-hover:text-c-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-c-dark group-hover:text-white mb-4">Training</h3>
+                    <p class="text-gray-600 group-hover:text-gray-100">Professional development programs and skill enhancement workshops.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Publications -->
+    <section class="py-24 bg-c-gray">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h4 class="text-c-accent font-bold uppercase tracking-widest mb-4 text-sm">Publications</h4>
+                <h2 class="text-4xl font-bold text-c-dark">Recent White Papers & Blogs</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 shadow-sm hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-c-accent rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="file-text" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-c-dark mb-4">Sustainable Infrastructure Development</h3>
+                    <p class="text-gray-600 mb-4">A comprehensive analysis of modern sustainable construction practices and their impact on environmental conservation.</p>
+                    <a href="#" class="text-c-accent font-bold text-sm hover:underline">Read More →</a>
+                </div>
+                <div class="bg-white p-8 shadow-sm hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-c-accent rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="pen-tool" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-c-dark mb-4">Lkrete Technology: Revolutionizing Construction</h3>
+                    <p class="text-gray-600 mb-4">Exploring the innovative precast concrete solutions that are transforming the construction industry.</p>
+                    <a href="#" class="text-c-accent font-bold text-sm hover:underline">Read More →</a>
+                </div>
+                <div class="bg-white p-8 shadow-sm hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-c-accent rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="file-text" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-c-dark mb-4">Quality Assurance in Modern Infrastructure</h3>
+                    <p class="text-gray-600 mb-4">Best practices for maintaining quality standards in large-scale infrastructure projects.</p>
+                    <a href="#" class="text-c-accent font-bold text-sm hover:underline">Read More →</a>
+                </div>
+                <div class="bg-white p-8 shadow-sm hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-c-accent rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="pen-tool" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-c-dark mb-4">The Future of Road Construction</h3>
+                    <p class="text-gray-600 mb-4">Emerging technologies and methodologies shaping the future of road infrastructure development.</p>
+                    <a href="#" class="text-c-accent font-bold text-sm hover:underline">Read More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Programs -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2">
+                    <h4 class="text-c-accent font-bold uppercase tracking-widest mb-4 text-sm">Training</h4>
+                    <h2 class="text-4xl font-bold text-c-dark mb-6">Professional Development</h2>
+                    <p class="text-gray-600 leading-relaxed mb-8">
+                        Our comprehensive training programs are designed to enhance skills and knowledge in infrastructure development, construction management, and innovative construction technologies.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i data-lucide="wrench" class="w-5 h-5 text-c-accent mr-3"></i>
+                            <span class="text-gray-600">Technical Skills Development</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-lucide="shield-check" class="w-5 h-5 text-c-accent mr-3"></i>
+                            <span class="text-gray-600">Safety Training Programs</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-lucide="lightbulb" class="w-5 h-5 text-c-accent mr-3"></i>
+                            <span class="text-gray-600">Innovation Workshops</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-lucide="users" class="w-5 h-5 text-c-accent mr-3"></i>
+                            <span class="text-gray-600">Leadership Development</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Training Programs" class="w-full h-auto shadow-2xl rounded-sm">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaboration CTA -->
+    <section class="py-24 bg-c-dark text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-6">Collaborate With Us</h2>
+            <p class="text-gray-300 mb-10 max-w-2xl mx-auto">Join us in advancing infrastructure development through research, innovation, and knowledge sharing.</p>
+            <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
+                <a href="events.html" class="bg-c-accent hover:bg-blue-700 text-white px-8 py-4 font-bold uppercase text-sm tracking-wider transition-colors">
+                    Attend Events
+                </a>
+                <a href="contact.html" class="border border-white text-white hover:bg-white hover:text-c-dark px-8 py-4 font-bold uppercase text-sm tracking-wider transition-colors">
+                    Partner With Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12 border-t border-white/10">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                <img src="Images/white logo.jpg" alt="Company Logo" class="h-10">
+                <div class="flex flex-col">
+                     <span class="text-lg font-bold tracking-tight leading-none">Laxman Kamath</span>
+                     <span class="text-sm font-bold tracking-tight text-gray-400">& Co.</span>
+                </div>
+            </div>
+            <div class="text-gray-500 text-sm text-center md:text-right">
+                &copy; 2023 Laxman Kamath & Co. All rights reserved.<br>
+                <a href="#" class="hover:text-white">Privacy Policy</a> | <a href="#" class="hover:text-white">Terms of Service</a>
+            </div>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" class="text-gray-500 hover:text-c-accent transition-colors"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                <a href="#" class="text-gray-500 hover:text-c-accent transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                <a href="#" class="text-gray-500 hover:text-c-accent transition-colors"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Navbar Scroll Effect
+        const nav = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('nav-scrolled');
+                nav.classList.remove('py-4');
+            } else {
+                nav.classList.remove('nav-scrolled');
+                nav.classList.add('py-4');
+            }
+        });
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Laxman Kamath & Co | Infrastructure & Construction</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Manrope', 'sans-serif'],
+                    },
+                    colors: {
+                        'c-dark': '#111111',
+                        'c-gray': '#F4F4F4',
+                        'c-accent': '#59529c', // Updated blue accent
+                        'c-lkrete': '#59529c', // Updated blue accent
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-overlay {
+            background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 100%);
+        }
+        .nav-scrolled {
+            background-color: rgba(17, 17, 17, 0.95);
+            backdrop-filter: blur(10px);
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 antialiased bg-white">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 text-white border-b border-white/10">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <!-- Left: Logo -->
+            <div class="flex items-center space-x-2 shrink-0">
+                <img src="Images/white logo.jpg" alt="Laxman Kamath & Co Logo" class="h-12">
+                <a href="index.html" class="hidden lg:block text-xl font-bold tracking-tight leading-tight">Laxman Kamath<br>& Co</a>
+                <a href="index.html" class="lg:hidden text-xl font-bold tracking-tight">LK & Co</a>
+            </div>
+            
+            <!-- Center: Main Links (Hidden on Mobile) -->
+            <div class="hidden xl:flex absolute left-1/2 transform -translate-x-1/2 space-x-3 text-xs font-bold tracking-wide uppercase">
+                <a href="index.html" class="hover:text-c-accent transition-colors">Home</a>
+                <a href="about.html" class="text-c-accent transition-colors">About</a>
+                <a href="values.html" class="hover:text-c-accent transition-colors">Values</a>
+                <a href="services.html" class="hover:text-c-accent transition-colors">Services</a>
+                <a href="quality.html" class="hover:text-c-accent transition-colors">Quality</a>
+                <a href="team.html" class="hover:text-c-accent transition-colors">Team</a>
+                <a href="innovation.html" class="hover:text-c-accent transition-colors">Innovation</a>
+                <a href="events.html" class="hover:text-c-accent transition-colors">Events</a>
+                <a href="careers.html" class="hover:text-c-accent transition-colors">Careers</a>
+                <a href="contact.html" class="hover:text-c-accent transition-colors">Contact</a>
+            </div>
+
+            <!-- Right: Lkrete Link & Mobile Menu Toggle -->
+            <div class="flex items-center space-x-4 shrink-0">
+                <a href="lkrete.html" class="hidden md:inline-block bg-c-accent hover:bg-indigo-800 text-white px-6 py-2 font-bold uppercase text-xs tracking-wider transition-colors rounded-sm">
+                    Lkrete
+                </a>
+                <button class="xl:hidden text-white" onclick="toggleMobileMenu()">
+                    <i data-lucide="menu" class="w-8 h-8"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-c-dark p-6 flex-col space-y-4 border-t border-gray-800 xl:hidden max-h-[80vh] overflow-y-auto">
+            <a href="index.html" class="block hover:text-c-accent font-bold">Home</a>
+            <a href="about.html" class="block text-c-accent font-bold">About Us</a>
+            <a href="values.html" class="block hover:text-c-accent font-bold">Values</a>
+            <a href="services.html" class="block hover:text-c-accent font-bold">Services</a>
+            <a href="quality.html" class="block hover:text-c-accent font-bold">Quality</a>
+            <a href="team.html" class="block hover:text-c-accent font-bold">Team & Safety</a>
+            <a href="innovation.html" class="block hover:text-c-accent font-bold">Academia & Innovation</a>
+            <a href="events.html" class="block hover:text-c-accent font-bold">Events</a>
+            <a href="careers.html" class="block hover:text-c-accent font-bold">Careers</a>
+            <a href="lkrete.html" class="block text-c-accent font-bold">Lkrete (Specialized)</a>
+            <a href="contact.html" class="block hover:text-c-accent font-bold">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-start overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="About Us" class="w-full h-full object-cover">
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10 pt-20">
+            <div class="max-w-3xl">
+                <div class="flex items-center space-x-4 mb-6 animate-fade-in">
+                    <div class="h-1 w-12 bg-c-accent"></div>
+                    <span class="text-c-accent uppercase tracking-widest font-bold text-sm">Est. 1998</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-8">
+                    Our Story & <br/>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">Vision</span>
+                </h1>
+                <p class="text-gray-300 text-lg md:text-xl mb-10 max-w-xl font-light">
+                    Building infrastructure excellence with 25+ years of commitment to quality, innovation, and sustainable construction practices.
+                </p>
+                <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+                    <a href="services.html" class="bg-c-accent hover:bg-indigo-800 text-white px-8 py-4 font-bold uppercase text-sm tracking-wider transition-colors text-center">
+                        Our Services
+                    </a>
+                    <a href="contact.html" class="border border-white text-white hover:bg-white hover:text-c-dark px-8 py-4 font-bold uppercase text-sm tracking-wider transition-colors text-center">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main About Content -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-start gap-16">
+                <div class="w-full lg:w-2/3">
+                    <h4 class="text-c-accent font-bold uppercase tracking-widest mb-4 text-sm">About Laxman Kamath & Co</h4>
+                    <h2 class="text-4xl font-bold text-c-dark mb-8">Building Tomorrow's Infrastructure Today</h2>
+                    
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-xl font-bold text-c-dark mb-4">Our Journey</h3>
+                            <p class="text-gray-600 leading-relaxed mb-6">
+                                Founded in 1998, Laxman Kamath & Co has emerged as a leading infrastructure and construction company with a relentless focus on excellence, integrity, and innovation. What began as a small construction firm has evolved into a comprehensive solutions provider across multiple sectors including road works, industrial infrastructure, commercial buildings, and specialized construction technologies.
+                            </p>
+                            <p class="text-gray-600 leading-relaxed">
+                                Our journey has been marked by consistent growth, technological advancement, and an unwavering commitment to delivering projects that stand the test of time. We take pride in our ability to tackle complex challenges and deliver solutions that exceed expectations while maintaining the highest standards of quality and safety.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-bold text-c-dark mb-4">Vision & Mission</h3>
+                            <div class="bg-c-gray p-8 border-l-4 border-c-accent">
+                                <h4 class="font-bold text-c-dark mb-3">Vision</h4>
+                                <p class="text-gray-600 mb-6">
+                                    To be the premier infrastructure company delivering sustainable and innovative solutions that empower communities and industries across India and beyond.
+                                </p>
+                                <h4 class="font-bold text-c-dark mb-3">Mission</h4>
+                                <p class="text-gray-600">
+                                    To build lasting infrastructure through excellence in execution, innovative construction methods, and sustainable practices while fostering long-term relationships with our clients, partners, and communities.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-bold text-c-dark mb-4">What Sets Us Apart</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-12 h-12 bg-c-accent/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                        <i data-lucide="award" class="w-6 h-6 text-c-accent"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-bold text-c-dark mb-2">25+ Years Experience</h5>
+                                        <p class="text-gray-600 text-sm">Quarter-century of proven excellence in infrastructure development</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-12 h-12 bg-c-accent/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                        <i data-lucide="shield-check" class="w-6 h-6 text-c-accent"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-bold text-c-dark mb-2">Quality Assurance</h5>
+                                        <p class="text-gray-600 text-sm">ISO certified processes ensuring every project meets highest standards</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-12 h-12 bg-c-accent/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                        <i data-lucide="leaf" class="w-6 h-6 text-c-accent"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-bold text-c-dark mb-2">Sustainability Focus</h5>
+                                        <p class="text-gray-600 text-sm">Eco-friendly construction methods and sustainable materials</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-12 h-12 bg-c-accent/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                        <i data-lucide="users" class="w-6 h-6 text-c-accent"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-bold text-c-dark mb-2">Expert Team</h5>
+                                        <p class="text-gray-600 text-sm">Skilled professionals and technical experts driving innovation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Timeline Sidebar -->
+                <div class="w-full lg:w-1/3">
+                    <div class="sticky top-32">
+                        <h3 class="text-xl font-bold text-c-dark mb-6">Our Timeline</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="flex-shrink-0 w-12 h-12 bg-c-accent text-white rounded-full flex items-center justify-center font-bold text-sm">1998</div>
+                                <div>
+                                    <h5 class="font-bold text-c-dark mb-1">Company Founded</h5>
+                                    <p class="text-gray-600 text-sm">Established with a vision to transform infrastructure development in Karnataka</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="flex-shrink-0 w-12 h-12 bg-c-accent text-white rounded-full flex items-center justify-center font-bold text-sm">2005</div>
+                                <div>
+                                    <h5 class="font-bold text-c-dark mb-1">Regional Expansion</h5>
+                                    <p class="text-gray-600 text-sm">Extended operations across South India with major highway projects</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="flex-shrink-0 w-12 h-12 bg-c-accent text-white rounded-full flex items-center justify-center font-bold text-sm">2010</div>
+                                <div>
+                                    <h5 class="font-bold text-c-dark mb-1">Industrial Sector Entry</h5>
+                                    <p class="text-gray-600 text-sm">Expanded into industrial infrastructure and manufacturing facilities</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="flex-shrink-0 w-12 h-12 bg-c-accent text-white rounded-full flex items-center justify-center font-bold text-sm">2015</div>
+                                <div>
+                                    <h5 class="font-bold text-c-dark mb-1">ISO Certification</h5>
+                                    <p class="text-gray-600 text-sm">Achieved ISO 9001:2015 certification for quality management systems</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="flex-shrink-0 w-12 h-12 bg-c-accent text-white rounded-full flex items-center justify-center font-bold text-sm">2020</div>
+                                <div>
+                                    <h5 class="font-bold text-c-dark mb-1">Digital Transformation</h5>
+                                    <p class="text-gray-600 text-sm">Implemented advanced project management and quality control systems</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="flex-shrink-0 w-12 h-12 bg-c-accent text-white rounded-full flex items-center justify-center font-bold text-sm">2023</div>
+                                <div>
+                                    <h5 class="font-bold text-c-dark mb-1">Lkrete Launch</h5>
+                                    <p class="text-gray-600 text-sm">Introduced revolutionary Lkrete technology for rapid construction</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-c-dark text-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold text-c-accent mb-2">25+</div>
+                    <div class="text-gray-400 uppercase tracking-wider text-sm font-bold">Years of Experience</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-c-accent mb-2">500+</div>
+                    <div class="text-gray-400 uppercase tracking-wider text-sm font-bold">Projects Completed</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-c-accent mb-2">50+</div>
+                    <div class="text-gray-400 uppercase tracking-wider text-sm font-bold">Expert Team Members</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-c-accent mb-2">100%</div>
+                    <div class="text-gray-

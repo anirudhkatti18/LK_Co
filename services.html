@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Laxman Kamath & Co | Infrastructure & Construction</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Manrope', 'sans-serif'],
+                    },
+                    colors: {
+                        'c-dark': '#111111',
+                        'c-gray': '#F4F4F4',
+                        'c-accent': '#0033FF', // Logo Blue
+                        'c-lkrete': '#0033FF', // Keeping consistent, or could be a distinct shade if needed
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-overlay {
+            background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 100%);
+        }
+        .nav-scrolled {
+            background-color: rgba(17, 17, 17, 0.95);
+            backdrop-filter: blur(10px);
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 antialiased bg-white">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 text-white border-b border-white/10">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <!-- Left: Logo -->
+            <div class="flex items-center space-x-2 shrink-0">
+                <img src="Images/white logo.jpg" alt="Laxman Kamath & Co Logo" class="h-12">
+                <a href="index.html" class="hidden lg:block text-xl font-bold tracking-tight leading-tight">Laxman Kamath<br>& Co</a>
+                <a href="index.html" class="lg:hidden text-xl font-bold tracking-tight">LK & Co</a>
+            </div>
+            
+            <!-- Center: Main Links (Hidden on Mobile) -->
+            <div class="hidden xl:flex absolute left-1/2 transform -translate-x-1/2 space-x-3 text-xs font-bold tracking-wide uppercase">
+                <a href="index.html" class="hover:text-c-accent transition-colors">Home</a>
+                <a href="about.html" class="hover:text-c-accent transition-colors">About</a>
+                <a href="values.html" class="hover:text-c-accent transition-colors">Values</a>
+                <a href="services.html" class="text-c-accent transition-colors">Services</a>
+                <a href="quality.html" class="hover:text-c-accent transition-colors">Quality</a>
+                <a href="team.html" class="hover:text-c-accent transition-colors">Team</a>
+                <a href="innovation.html" class="hover:text-c-accent transition-colors">Innovation</a>
+                <a href="events.html" class="hover:text-c-accent transition-colors">Events</a>
+                <a href="careers.html" class="hover:text-c-accent transition-colors">Careers</a>
+                <a href="contact.html" class="hover:text-c-accent transition-colors">Contact</a>
+            </div>
+
+            <!-- Right: Lkrete Link & Mobile Menu Toggle -->
+            <div class="flex items-center space-x-4 shrink-0">
+                <a href="lkrete.html" class="hidden md:inline-block bg-c-accent hover:bg-blue-700 text-white px-6 py-2 font-bold uppercase text-xs tracking-wider transition-colors rounded-sm">
+                    Lkrete
+                </a>
+                <button class="xl:hidden text-white" onclick="toggleMobileMenu()">
+                    <i data-lucide="menu" class="w-8 h-8"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-c-dark p-6 flex-col space-y-4 border-t border-gray-800 xl:hidden max-h-[80vh] overflow-y-auto">
+            <a href="index.html" class="block hover:text-c-accent font-bold">Home</a>
+            <a href="about.html" class="block hover:text-c-accent font-bold">About Us</a>
+            <a href="values.html" class="block hover:text-c-accent font-bold">Values</a>
+            <a href="services.html" class="block text-c-accent font-bold">Services</a>
+            <a href="quality.html" class="block hover:text-c-accent font-bold">Quality</a>
+            <a href="team.html" class="block hover:text-c-accent font-bold">Team & Safety</a>
+            <a href="innovation.html" class="block hover:text-c-accent font-bold">Academia & Innovation</a>
+            <a href="events.html" class="block hover:text-c-accent font-bold">Events</a>
+            <a href="careers.html" class="block hover:text-c-accent font-bold">Careers</a>
+            <a href="lkrete.html" class="block text-c-accent font-bold">Lkrete (Specialized)</a>
+            <a href="contact.html" class="block hover:text-c-accent font-bold">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-start overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Our Services" class="w-full h-full object-cover">
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10 pt-20">
+            <div class="max-w-3xl">
+                <div class="flex items-center space-x-4 mb-6 animate-fade-in">
+                    <div class="h-1 w-12 bg-c-accent"></div>
+                    <span class="text-c-accent uppercase tracking-widest font-bold text-sm">Comprehensive Solutions</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-8">
+                    Our Services &<br/>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">Expertise</span>
+                </h1>
+                <p class="text-gray-300 text-lg md:text-xl mb-10 max-w-xl font-light">
+                    Delivering excellence across multiple infrastructure sectors with specialized solutions tailored to your needs.
+                </p>
+                <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+                    <a href="#road-works" class="bg-c-accent hover:bg-blue-700 text-white px-8 py-4 font-bold uppercase text-sm tracking-wider transition-colors text-center">
+                        Explore Services
+                    </a>
+                    <a href="contact.html" class="border border-white text-white hover:bg-white hover:text-c-dark px-8 py-4 font-bold uppercase text-sm tracking-wider transition-colors text-center">
+                        Get Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Road Works Section -->
+    <section id="road-works" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="w-full lg:w-1/2">
+                    <div class="w-12 h-12 bg-c-accent/10 rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="route" class="w-6 h-6 text-c-accent"></i>
+                    </div>
+                    <h2 class="text-4xl font-bold text-c-dark mb-6">Road Works & Infrastructure</h2>
+                    <p class="text-gray-600 leading-relaxed mb-8">
+                        We specialize in comprehensive road infrastructure development, from highways and expressways to urban road networks. Our expertise spans the entire spectrum of road construction, ensuring durable, safe, and sustainable transportation infrastructure.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-c-accent text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm">1</div>
+                            <div>
+                                <h4 class="font-bold text-c-dark mb-2">Highway Construction</h4>
+                                <p class="text-gray-600 text-sm">Multi-lane highways, expressways, and inter-state connectivity projects with advanced engineering solutions.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-c-accent text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm">2</div>
+                            <div>
+                                <h4 class="font-bold text-c-dark mb-2">Urban Road Development</h4>
+                                <p class="text-gray-600 text-sm">City roads, flyovers, bridges, and urban infrastructure modernization projects.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-c-accent text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm">3</div>
+                            <div>
+                                <h4 class="font-bold text-c-dark mb-2">Infrastructure Solutions</h4>
+                                <p class="text-gray-600 text-sm">Complete road infrastructure including drainage, lighting, signage, and maintenance systems.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <a href="contact.html" class="inline-flex items-center bg-c-accent hover:bg-blue-700 text-white px-6 py-3 font-bold uppercase text-sm tracking-wider transition-colors">
+                            Discuss Your Project <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Road Works" class="w-full h-auto shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industrial Sector Section -->
+    <section class="py-24 bg-c-gray">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row-reverse items-center gap-16">
+                <div class="w-full lg:w-1/2">
+                    <div class="w-12 h-12 bg-c-accent/10 rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="factory" class="w-6 h-6 text-c-accent"></i>
+                    </div>
+                    <h2 class="text-4xl font-bold text-c-dark mb-6">Industrial Sector</h2>
+                    <p class="text-gray-600 leading-relaxed mb-8">
+                        Our industrial infrastructure solutions cater to manufacturing, power systems, and waste management sectors. We deliver robust, efficient, and compliant industrial facilities that meet the highest standards of safety and functionality.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div class="bg-white p-6 shadow-sm">
+                            <i data-lucide="cpu" class="w-8 h-8 text-c-accent mb-4"></i>
+                            <h4 class="font-bold text-c-dark mb-2">Manufacturing Plants</h4>
+                            <p class="text-gray-600 text-sm">Complete industrial facility construction with advanced automation infrastructure.</p>
+                        </div>
+                        <div class="bg-white p-6 shadow-sm">
+                            <i data-lucide="zap" class="w-8 h-8 text-c-accent mb-4"></i>
+                            <h4 class="font-bold text-c-dark mb-2">Power Systems</h4>
+                            <p class="text-gray-600 text-sm">Power plant infrastructure and renewable energy installations.</p>
+                        </div>
+                        <div class="bg-white p-6 shadow-sm">
+                            <i data-lucide="recycle" class="w-8 h-8 text-c-accent mb-4"></i>
+                            <h4 class="font-bold text-c-dark mb-2">Waste Management</h4>
+                            <p class="text-gray-600 text-sm">Modern waste processing and recycling facility infrastructure.</p>
+                        </div>
+                        <div class="bg-white p-6 shadow-sm">
+                            <i data-lucide="settings" class="w-8 h-8 text-c-accent mb-4"></i>
+                            <h4 class="font-bold text-c-dark mb-2">Utility Infrastructure</h4>
+                            <p class="text-gray-600 text-sm">Complete utility systems including water, power, and communication networks.</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <a href="contact.html" class="inline-flex items-center bg-c-accent hover:bg-blue-700 text-white px-6 py-3 font-bold uppercase text-sm tracking-wider transition-colors">
+                            Industrial Solutions <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1565513906600-27f9e56f7f88?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Industrial Sector" class="w-full h-auto shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Warehouse & Commercial Section -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="w-full lg:w-1/2">
+                    <div class="w-12 h-12 bg-c-accent/10 rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="building" class="w-6 h-6 text-c-accent"></i>
+                    </div>
+                    <h2 class="text-4xl font-bold text-c-dark mb-6">Commercial & Warehouse</h2>
+                    <p class="text-gray-600 leading-relaxed mb-8">
+                        From state-of-the-art warehouses to modern commercial buildings, SEZs, and retail centers, we create spaces that optimize functionality while delivering exceptional value and aesthetic appeal.
+                    </p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center space-x-3">
+                            <i data-lucide="check" class="w-5 h-5 text-c-accent"></i>
+                            <span class="text-gray-700">Large-scale warehouse and distribution centers</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i data-lucide="check" class="w-5 h-5 text-c-accent"></i>
+                            <span class="text-gray-700">Modern office buildings and business parks</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i data-lucide="check" class="w-5 h-5 text-c-accent"></i>
+                            <span class="text-gray-700">Special Economic Zones (SEZs) development</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i data-lucide="check" class="w-5 h-5 text-c-accent"></i>
+                            <span class="text-gray-700">Shopping centers and retail infrastructure</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i data-lucide="check" class="w-5 h-5 text-c-accent"></i>
+                            <span class="text-gray-700">Cold storage and specialized storage facilities</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <a href="contact.html" class="inline-flex items-center bg-c-accent hover:bg-blue-700 text-white px-6 py-3 font-bold uppercase text-sm tracking-wider transition-colors">
+                            View Portfolio <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Commercial Buildings" class="w-full h-auto shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Energy & Petroleum Section -->
+    <section class="py-24 bg-c-gray">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row-reverse items-center gap-16">
+                <div class="w-full lg:w-1/2">
+                    <div class="w-12 h-12 bg-c-accent/10 rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="droplets" class="w-6 h-6 text-c-accent"></i>
+                    </div>
+                    <h2 class="text-4xl font-bold text-c-dark mb-6">Petroleum & Energy</h2>
+                    <p class="text-gray-600 leading-relaxed mb-8">
+                        Specialized infrastructure for the petroleum and energy sector, including refineries, power plants, and comprehensive energy infrastructure that meets the highest safety and environmental standards.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 shadow-sm">
+                            <h4 class="font-bold text-c-dark mb-2 flex items-center">
+                                <i data-lucide="fuel" class="w-5 h-5 text-c-accent mr-2"></i>
+                                Refinery Infrastructure
+                            </h4>
+                            <p class="text-gray-600 text-sm">Complete refinery construction including processing units, storage tanks, and safety systems.</p>
+                        </div>
+                        <div class="bg-white p-6 shadow-sm">
+                            <h4 class="font-bold text-c-dark mb-2 flex items-center">
+                                <i data-lucide="sun" class="w-5 h-5 text-c-accent mr-2"></i>
+                                Power Plant Facilities
+                            </h4>
+                            <p class="text-gray-600 text-sm">Conventional and renewable power plant infrastructure with advanced control systems.</p>
+                        </div>
+                        <div class="bg-white p-6 shadow-sm">
+                            <h4 class="font-bold text-c-dark mb-2 flex items-center">
+                                <i data-lucide="activity" class="w-5 h-5 text-c-accent mr-2"></i>
+                                Energy Distribution
+                            </h4>
+                            <p class="text-gray-600 text-sm">Power transmission infrastructure and distribution network construction.</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <a href="contact.html" class="inline-flex items-center bg-c-accent hover:bg-blue-700 text-white px-6 py-3 font-bold uppercase text-sm tracking-wider transition-colors">
+                            Energy Projects <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Energy Infrastructure" class="w-full h-auto shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Assurance Section -->
+    <section class="py-24 bg-c-dark text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <div class="w-12 h-12 bg-c-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i data-lucide="check-circle" class="w-6 h-6 text-c-accent"></i>
+                </div>
+                <h2 class="text-4xl font-bold mb-6">Quality Assurance & Certifications</h2>
+                <p class="text-gray-300 text-lg max-w-3xl mx-auto">
+                    Our commitment to excellence is reflected in our ISO certified processes, rigorous quality control measures, and comprehensive safety protocols that ensure every project meets the highest international standards.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-8 bg-white/5 border border-white/10">
+                    <i data-lucide="award" class="w-12 h-12 text-c-accent mx-auto mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4">ISO 9001:2015</h3>
+                    <p class="text-gray-400">Certified quality management systems ensuring consistent excellence in project delivery.</p>
+                </div>
+                <div class="text-center p-8 bg-white/5 border border-white/10">
+                    <i data-lucide="shield-check" class="w-12 h-12 text-c-accent mx-auto mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4">Safety Standards</h3>
+                    <p class="text-gray-400">Comprehensive safety protocols and regular training programs for all personnel.</p>
+                </div>
+                <div class="text-center p-8 bg-white/5 border border-white/10">
+                    <i data-lucide="leaf" class="w-12 h-12 text-c-accent mx-auto mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4">Environmental Compliance</h3>
+                    <p class="text-gray-400">Adherence to environmental regulations and sustainable construction practices.</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="lkrete.html" class="inline-flex items-center bg-c-accent hover:bg-blue-700 text-white px-8 py-4 font-bold uppercase text-sm tracking-wider transition-colors">
+                    Explore Our Technology <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-16 bg-c-accent text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Start Your Project?</h2>
+            <p class="text-blue-100 mb-8 max-w-2xl mx-auto">
+                Let's discuss how we can bring your infrastructure vision to life with our expertise and innovative solutions.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
+                <a href="contact.html" class="bg-white text-c-accent hover:bg-gray-100 px-8 py-4 font-bold uppercase text-sm tracking-wider transition-colors">
+                    Get In Touch
+                </a>
+                <a href="careers.html" class="border border-white text-white hover:bg-white hover:text-c-accent px-8 py-4 font-bold uppercase text-sm tracking-wider transition-colors">
+                    Join Our Team
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12 border-t border-white/10">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                <img src="Images/white logo.jpg" alt="Company Logo" class="h-10">
+                <div class="flex flex-col">
+                     <span class="text-lg font-bold tracking-tight leading-none">Laxman Kamath</span>
+                     <span class="text-sm font-bold tracking-tight text-gray-400">& Co.</span>
+                </div>
+            </div>
+            <div class="text-gray-500 text-sm text-center md:text-right">
+                &copy; 2023 Laxman Kamath & Co. All rights reserved.<br>
+                <a href="#" class="hover:text-white">Privacy Policy</a> | <a href="#" class="hover:text-white">Terms of Service</a>
+            </div>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" class="text-gray-500 hover:text-c-accent transition-colors"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                <a href="#" class="text-gray-500 hover:text-c-accent transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                <a href="#" class="text-gray-500 hover:text-c-accent transition-colors"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Navbar Scroll Effect
+        const nav = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('nav-scrolled');
+                nav.classList.remove('py-4');
+            } else {
+                nav.classList.remove('nav-scrolled');
+                nav.classList.add('py-4');
+            }
+        });
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+        }
+    </script>
+</body>
+</html>
