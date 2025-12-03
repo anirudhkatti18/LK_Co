@@ -1,7 +1,0 @@
-- [x] Create todo list for color replacement task
-- [ ] Examine CSS file to identify current blue accent colors
-- [ ] Review HTML files for any inline blue color styles
-- [ ] Replace blue accent colors with #59529c in CSS file
-- [ ] Replace any inline blue color styles in HTML files
-- [ ] Verify changes across all pages
-- [ ] Test website appearance after changes
