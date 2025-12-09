@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Laxman Kamath & Co | Infrastructure & Construction</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Manrope', 'sans-serif'],
+                    },
+                    colors: {
+                        'c-dark': '#111111',
+                        'c-gray': '#F4F4F4',
+                        'c-accent': '#59529c', // Updated blue accent
+                        'c-lkrete': '#59529c', // Updated blue accent
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .hero-overlay {
+            background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 100%);
+        }
+        .nav-scrolled {
+            background-color: rgba(17, 17, 17, 0.95);
+            backdrop-filter: blur(10px);
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 antialiased bg-white">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 text-white border-b border-white/10">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <!-- Left: Logo -->
+            <div class="flex items-center space-x-2 shrink-0">
+                <img src="public/Images/white logo.jpg" alt="Laxman Kamath & Co Logo" class="h-12">
+                <a href="index.html" class="hidden lg:block text-xl font-bold tracking-tight leading-tight">Laxman Kamath<br>& Co</a>
+                <a href="index.html" class="lg:hidden text-xl font-bold tracking-tight">LK & Co</a>
+            </div>
+
+            <!-- Center: Main Links (Hidden on Mobile) -->
+            <div class="hidden xl:flex absolute left-1/2 transform -translate-x-1/2 space-x-3 text-xs font-bold tracking-wide uppercase">
+                <a href="index.html" class="hover:text-c-accent transition-colors">Home</a>
+                <a href="about.html" class="text-c-accent transition-colors">About</a>
+                <a href="values.html" class="hover:text-c-accent transition-colors">Values</a>
+                <a href="services.html" class="hover:text-c-accent transition-colors">Services</a>
+                <a href="quality.html" class="hover:text-c-accent transition-colors">Quality</a>
+                <a href="team.html" class="hover:text-c-accent transition-colors">Team</a>
+                <a href="innovation.html" class="hover:text-c-accent transition-colors">Innovation</a>
+                <a href="events.html" class="hover:text-c-accent transition-colors">Events</a>
+                <a href="careers.html" class="hover:text-c-accent transition-colors">Careers</a>
+                <a href="contact.html" class="hover:text-c-accent transition-colors">Contact</a>
+            </div>
+
+            <!-- Right: Lkrete Link & Mobile Menu Toggle -->
+            <div class="flex items-center space-x-4 shrink-0">
+                <a href="lkrete.html" class="hidden md:inline-block bg-c-accent hover:bg-blue-700 text-white px-6 py-2 font-bold uppercase text-xs tracking-wider transition-colors rounded-sm">
+                    Lkrete
+                </a>
+                <button class="xl:hidden text-white" onclick="toggleMobileMenu()">
+                    <i data-lucide="menu" class="w-8 h-8"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-c-dark text-white p-6 flex-col space-y-4 border-t border-white/10 xl:hidden max-h-[80vh] overflow-y-auto">
+            <a href="index.html" class="block hover:text-c-accent font-bold">Home</a>
+            <a href="about.html" class="block text-c-accent font-bold">About Us</a>
+            <a href="values.html" class="block hover:text-c-accent font-bold">Values</a>
+            <a href="services.html" class="block hover:text-c-accent font-bold">Services</a>
+            <a href="quality.html" class="block hover:text-c-accent font-bold">Quality</a>
+            <a href="team.html" class="block hover:text-c-accent font-bold">Team & Safety</a>
+            <a href="innovation.html" class="block hover:text-c-accent font-bold">Academia & Innovation</a>
+            <a href="events.html" class="block hover:text-c-accent font-bold">Events</a>
+            <a href="careers.html" class="block hover:text-c-accent font-bold">Careers</a>
+            <a href="lkrete.html" class="block text-c-accent font-bold">Lkrete (Specialized)</a>
+            <a href="contact.html" class="block hover:text-c-accent font-bold">Contact</a>
+        </div>
+    </nav>
+
+
+   <!-- Video Section -->
+    <section class="py-24 bg-c-theme-bg text-c-theme-text">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <div class="flex items-center justify-center space-x-4 mb-6">
+                    <div class="h-1 w-12 bg-c-accent"></div>
+                    <span class="text-c-accent uppercase tracking-widest font-bold text-sm">Project Showcase</span>
+                </div>
+                <h2 class="text-4xl font-bold text-c-theme-text mb-6">Industrial Applications</h2>
+                <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+                    Discover how Lkrete's precast concrete solutions are revolutionizing industrial construction with enhanced durability, rapid installation, and sustainable practices. From manufacturing plants to heavy industry facilities, explore our successful projects that showcase the strength and versatility of Lkrete technology.
+                </p>
+            </div>
+
+            <div class="">
+                <div class="flex flex-col md:flex-row gap-8 items-center justify-center">
+                    <!-- Video Center -->
+                    <div class="max-w-4xl mx-auto">
+                        <div class="relative bg-black rounded-2xl overflow-hidden shadow-2xl">
+                            <div class="aspect-video">
+                                <video class="w-full h-full object-cover object-center" controls preload="metadata" poster="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80">
+                                    <source src="public/Images/Skyscrapers Don't Fall.webm" type="video/webm">
+                                    <source src="public/Images/Skyscrapers Don't Fall.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <h3 class="text-xl font-bold">Technology Showcase</h3>
+                            </div>
+                        </div>
+                        <img src="public/Images/precast_elemts.png" alt="Precast Elements" class="w-full max-w-4xl h-80 object-cover object-center rounded-lg shadow-lg mt-12 mx-auto">
+                        <div class="text-center mt-8">
+                            <p class="text-gray-600 mb-4">Explore how Lkrete technology transforms construction challenges into remarkable achievements.</p>
+                            <a href="contact.html" class="bg-c-accent hover:bg-green-700 text-white px-8 py-4 font-bold uppercase text-sm tracking-wider transition-colors inline-block rounded-sm">
+                                Discuss Your Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="construction-tape-separator"></div>
+
+        <!-- Footer -->
+   <!-- Footer -->
+    <footer class="bg-black text-white py-12 border-t border-white/10">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                <img src="public/Images/white logo.jpg" alt="Company Logo" class="h-10">
+                <div class="flex flex-col">
+                     <span class="text-lg font-bold tracking-tight leading-none">Laxman Kamath</span>
+                     <span class="text-sm font-bold tracking-tight text-gray-400">& Co.</span>
+                </div>
+            </div>
+            <div class="text-gray-500 text-sm text-center md:text-right">
+                &copy; 2023 Laxman Kamath & Co. All rights reserved.<br>
+                <a href="#" class="hover:text-white">Privacy Policy</a> | <a href="#" class="hover:text-white">Terms of Service</a>
+            </div>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" class="text-gray-500 hover:text-c-accent transition-colors"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                <a href="#" class="text-gray-500 hover:text-c-accent transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                <a href="#" class="text-gray-500 hover:text-c-accent transition-colors"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
